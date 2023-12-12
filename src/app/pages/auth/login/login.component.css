@@ -3,7 +3,7 @@ form input{
 }
 
 form button{
-    border : 1px solid #9E896A;
+    border : 2px solid #9E896A;
     transition: 0.2s;
     z-index: 1;
 }
@@ -13,7 +13,7 @@ form button::after{
    content : "";
    left :0;
    top : 0;
-   background-color: #9E896A;
+   background-color: white;
    height : 100%;
    border-radius :0.2rem;
    width : 0;
@@ -36,15 +36,18 @@ form button:hover::after{
     
 }
 
-.card::after{
+/* .card::after{
     content : "";
     position : absolute;
     right : 0;
-    top :0;
+    bottom :0;
     width : 2px;
-    height : 100%;
+    height : 50%;
     background-color:#9E896A;
-}
+    border-radius : 10rem;
+} */
+
+
 
 .para::before{
     position : absolute;
@@ -55,5 +58,6 @@ form button:hover::after{
     bottom : 50%;
     height : 2px;
     transforme : translateY(-50%);
-    
 }
+
+

@@ -1,27 +1,28 @@
-<section class="login-section  h-screen">
+<section class="login-section  bg-[#f0f1ec] h-screen">
 
   <!-- container -->
-  <div class="container flex flex-row justify-center items-center h-screen  ">
+  <div class="container  flex flex-row justify-center items-center h-screen  ">
     <!-- card -->
-    <div class="card relative  pr-4 items-center gap-4 rounded-lg flex shadow-2xl bg-[#fffefc]">
+    <div class="card pb-10  lg:pb-0  md:rounded-none relative  lg:pr-4 items-center gap-4 rounded-lg flex flex-col lg:flex-row shadow-2xl bg-[#fffefc]">
         <!-- ellips  -->
         <!-- <img  class="absolute w-[30%] opacity-80  right-0 top-0" src="/assets/svg/round.svg" alt=""> -->
         <!-- left image  -->
-        <img class="w-[350px] rounded-lg" src="/assets/images/bulding.jpg" alt="">
+        <img class=" hidden lg:block house-img opacity-80 w-[350px] relative lg:rounded-lg" src="/assets/images/bulding.jpg" alt="">
+        <img class=" lg:hidden rounded-t-lg md:rounded-none house-img opacity-80 w-[400px] relative " src="/assets/images/small-screen.jpg" alt="">
           <!-- right  -->
-          <div class="flex py-2 right mr-4  flex-col gap-2">
+          <div class="flex md:py-2  right mr-4  flex-col gap-4">
           <!-- logo -->
          
           <!-- paragraph -->
-          <div class=" w-fit m-auto mb-20 text-center">
-              <p class=" para relative text-xl uppercase font-medium">welcom to <span class="uppercase text-[#9E896A]">za</span>estate</p>
+          <div class=" w-fit m-auto my-8 lg:mb-20 text-center">
+              <p class=" para animate-pulse relative text-xl uppercase font-medium">welcom to <span class="uppercase text-[#9E896A]">za</span>estate</p>
           </div>
 
           <!-- form -->
           <form class="flex flex-col gap-6 ">
-              <input class="w-[350px] py-2  pl-2  outline-none" type="email" placeholder="Please enter your email ">
-              <input class="w-[350px] py-2  pl-2  outline-none" type="email" placeholder="Please enter your password ">    
-              <button class="uppercase relative  py-2 rounded-md font-medium">login</button>
+              <input class="md:w-[350px] w-[300px] py-2  pl-2  outline-none" type="email" placeholder="Please enter your email ">
+              <input class="md:w-[350px] w-[300px] py-2  pl-2  outline-none" type="email" placeholder="Please enter your password ">    
+              <button class="uppercase relative bg-[#9E896A]  py-2 rounded-md font-medium">login</button>
           </form>
         </div>
     </div>
