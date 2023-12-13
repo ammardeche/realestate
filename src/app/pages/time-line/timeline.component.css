@@ -1,0 +1,40 @@
+/* Styling for each timeline card */
+.card {
+  position: relative;
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+}
+
+/* Styling for the date badge */
+.absolute {
+  position: absolute;
+  top: 0;
+  left: -20px; /* Adjust the distance from the left */
+  background-color: #aa987c;
+  padding: 0.5rem;
+  border-radius: 9999px; /* To create a rounded shape */
+}
+
+/* Styling for the date text inside the badge */
+.absolute p {
+  margin: 0;
+  color: #fff; /* Adjust text color */
+}
+
+/* Styling for the images inside the timeline card */
+.card img {
+  width: 30%; /* Adjust image width as needed */
+  border-radius: 0.5rem; /* Add rounded corners to images */
+}
+
+/* Styling for the timeline text */
+.text-2xl {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+
+/* Optional: Add more styles as per your design needs */

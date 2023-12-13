@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpEndpointsService } from '../../services/http-endpoints.service';
 
 @Component({
   selector: 'app-ticket',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './ticket.component.css'
 })
 export class TicketComponent {
-
+  constructor(private http: HttpEndpointsService) {
+    this.http
+      .get('http://localhost:3000/api/posts/getPosts')
+      .subscribe((data) => {
+        console.log(data);
+      });
+  }
 }

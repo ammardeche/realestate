@@ -19,10 +19,10 @@
           </div>
 
           <!-- form -->
-          <form class="flex flex-col gap-6 ">
-              <input class="md:w-[350px] w-[300px] py-2  pl-2  outline-none" type="email" placeholder="Please enter your email ">
-              <input class="md:w-[350px] w-[300px] py-2  pl-2  outline-none" type="email" placeholder="Please enter your password ">    
-              <button   class="uppercase relative bg-[#9E896A]  py-2 rounded-md font-medium">login</button>
+          <form [formGroup]="loginForm" (ngSubmit)="login()"  class="flex flex-col gap-6 ">
+              <input class="md:w-[350px] w-[300px] py-2  pl-2  outline-none" formControlName="email" required type="email" placeholder="Please enter your email ">
+              <input class="md:w-[350px] w-[300px] py-2  pl-2  outline-none" formControlName="password" required type="password" placeholder="Please enter your password ">    
+              <button  type="submit" class="uppercase relative bg-[#9E896A]  py-2 rounded-md font-medium">login</button>
           </form>
         </div>
     </div>

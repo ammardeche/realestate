@@ -11,15 +11,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './notification.component.css'
 })
 export class NotificationComponent {
-  /**
-   *
-   */
-  constructor(
-    private http: HttpEndpointsService,
-    //private http: HttpClient
-  ) {
-    http.get<INotification>('').subscribe(res => {
-      
-    });
+  constructor(private http: HttpEndpointsService) {
+    this.http
+      .get('http://localhost:3000/api/posts/getPosts')
+      .subscribe((data) => {
+        console.log(data);
+      });
   }
 }
