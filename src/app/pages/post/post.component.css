@@ -1,0 +1,13 @@
+.para::after{
+    position: absolute;
+    content: "";
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left:0;
+}
+
+.italic-text {
+    font-style: italic; /* Set the font style to italic */
+  }

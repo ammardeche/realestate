@@ -1,0 +1,22 @@
+.side-bar{
+    box-shadow: inset -4px 2px 7px 0 #00000017;
+}
+.icon img , .icon p {
+    transition: 0.3s;
+}
+.icon:hover img , .icon:hover p {
+    filter: invert(57%) sepia(28%) saturate(379%) hue-rotate(7deg) brightness(95%) contrast(100%);
+}
+
+.icon::after{
+
+}
+.icon:hover::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    background-color:#9c906c;
+    height: 50px;
+    width: 4px;
+    margin-left:4px;
+}

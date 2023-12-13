@@ -1,1 +1,34 @@
-<p>left-side-bar works!</p>
+<section
+  class="side-bar relative  pt-5 w-[120px] h-[200vh] flex flex-col gap-6 bg-[#ffff]"
+>
+<div class="icon pl-4 flex flex-row justify-center">
+    <button routerLink="notification" class="flex justify-center items-center flex-col gap-1">
+        <img class="w-[25px]" src="/assets/svg/notification.svg" alt="" />
+        <p class="text-base">Notifications</p>
+      </button>
+  </div>
+  <div class="icon pl-4 flex flex-row justify-center">
+    <button [routerLink]="['/post']" routerLinkActive="router-link-active"  class="flex justify-center items-center flex-col gap-1">
+        <img class="w-[25px]" src="/assets/svg/message.svg" alt="" />
+        <p class="text-base">Post</p>
+      </button>
+  </div>
+  <div class=" icon pl-4 flex flex-row justify-center">
+    <button routerLink="/ticket" class="flex justify-center items-center flex-col gap-1">
+      <img class="w-[25px]" src="/assets/svg/ticket.svg" alt="" />
+      <p class="text-base">Tickets</p>
+    </button>
+  </div>
+  <div class="icon pl-4 flex flex-row justify-center">
+    <button routerLink="/timeline" class="flex justify-center items-center flex-col gap-1">
+        <img class="w-[20px]" src="/assets/svg/timeline.svg" alt="" />
+        <p class="text-base">Timeline</p>
+      </button>
+  </div>
+  <div class="icon pl-4 flex flex-row justify-center">
+    <button routerLink="/call-us" class="flex justify-center items-center flex-col gap-1">
+        <img class="w-[20px]" src="/assets/svg/Call.svg" alt="" />
+        <p class="text-base">Calls Us</p>
+      </button>
+  </div>
+</section>
